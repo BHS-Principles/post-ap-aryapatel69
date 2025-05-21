@@ -1,15 +1,16 @@
-var LIST = [
-" frozen burritoes",
-" skbididi dop dop",
-" banana foster",
-" egg mcmuffin wtih egg"
-"feed your familuy"
 
-]
+var BTN = document.getElementById("myButton")
 
+var doSomething = function(event){
+    alert("prasie me");
+    console.log(event)
+}
 
-
-for( let i=0; i < 3; i++){
-    alert(" frozen burritoes" + list[i]);
+for(var i = 0; i < 3; i++){
+    var newBTN = BTN.cloneNode(true)
+    document.body.append(newBTN);
 
 }
+
+alert("PLEASE LET IT WORK!!!!")
+                                        
